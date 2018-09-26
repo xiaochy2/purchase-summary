@@ -9,7 +9,7 @@ class Details extends React.Component {
         console.log(isPromo);
         let displayTotal = subtotal+taxesFees- pickupSavings;
         if(isPromo){
-            displayTotal*=0.9;
+            displayTotal = (displayTotal*0.9).toFixed(2);
         }
         console.log(displayTotal);
         
